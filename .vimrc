@@ -11,6 +11,8 @@ set autoindent              " indent a new line the same amount as the line jus 
 set number                  " add line numbers
 set wildmode=longest,list   " get bash-like tab completions
 map <C-o> :NERDTreeToggle<CR>
+" enable autocomplete on startup
+let g:deoplete#enable_at_startup = 1
 
 
 " Init Vundle
@@ -27,6 +29,7 @@ Plugin 'morhetz/gruvbox'
 Plugin 'fatih/vim-go'
 Plugin 'scrooloose/nerdtree'
 Plugin 'itchyny/lightline.vim'
+Plugin 'shougo/deoplete.nvim'
 
 Plugin 'tpope/vim-commentary'
 
